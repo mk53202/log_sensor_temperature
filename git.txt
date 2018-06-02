@@ -1,0 +1,5 @@
+git init
+git pull
+git status
+git commit -m <<message>>
+git --set-upstream <<url>> master
