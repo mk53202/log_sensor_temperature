@@ -45,12 +45,15 @@ def main():
 		time.sleep(60.0)
 
 def log_temperature(my_temp):
+	# Refactor this
 	now = datetime.datetime.now()
+	now = now.strftime("%x %X")
+
 	out_temp = str(now) + " - " + str(my_temp)
 
 	my_string_format = "{0:.1f}" 
 	me = my_string_format.format(my_temp)
-        out_temp = str(now) + " - " + str(me)
+        out_temp = str(now) + "," + str(me)
 
 	logname = "temperature.log"
 	dirpath = os.path.dirname(os.path.realpath(__file__))
