@@ -47,7 +47,8 @@ def main():
 def log_temperature(my_temp):
 	# Refactor this
 	now = datetime.datetime.now()
-	now = now.strftime("%x %X")
+#	now = now.strftime("%x %X")
+        now = now.strftime("%x %H:%M")
 
 	out_temp = str(now) + " - " + str(my_temp)
 
